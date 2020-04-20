@@ -7,7 +7,9 @@ server.use(express.json())
 server.use(expressRouters)
 
 
-
+server.get("/", (req, res) => {
+    res.json('Hello to my api!')
+})
 
 const port = process.env.PORT
 
